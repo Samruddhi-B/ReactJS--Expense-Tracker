@@ -1,38 +1,158 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body{
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  background-color:#FBCEB1;
+
+}
+
+
+.expenseTracker{
+  /* background-color:green; */
+  background-image: url(../public/138958.jpg);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-width: 900px;
+  height: 100%;
+  min-height: 600px;
+  padding: 15px;
+  color: brown;
+  border-radius: 8px;
+
+}
+.heading{
+  margin: 8px;
+  padding: 10px 10px 10px 0;
+}
+.heading img{
+  width:100%;
+  max-width: 250px;
+  height: 100%;
+  max-height: 210px;
+  margin:10px 0 0 10px;
+}
+.expenseForm{
+  /* background-color: white; */
+  backdrop-filter: blur(5px);
+  border: 2px solid brown;
+  color:white;
+  border-radius: 8px;
+  margin-top: 20px;
+  padding: 10px;
+  max-height: 220px;
+  height: 100%;
+  text-align: center;
+}
+input{
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid brown;
+  border-radius: 8px;
+  text-align:start;
+  padding: 5px;
+  margin-top: 10px;
+
+}
+
+.expenseForm button{
+  width: 100px;
+  height: 40px;
+  border-radius: 8px;
+  border:none;
+  cursor: pointer;
+  background-color: brown;
   color: white;
+  font-size: 14px;
+  margin-top: 10px;  
+}
+.total{
+  /* background-color: white; */
+  backdrop-filter: blur(5px);
+  border: 2px solid green;;
+  color:green;
+  border-radius: 8px;
+  width: 50%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-left: 20px;
+  max-height: 540px;
+  overflow-y: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.list{
+  display: grid;
+  grid-template-columns: 2fr 100px 60px; /* 👈 fixed columns */
+
+  justify-content:space-between;
+  align-items: center;
+  padding:10px;
+  margin:8px;
+  border-radius: 8px;
+  /* background-color: brown; */
+  background:rgba(60, 179, 113,0.2);
+
+  backdrop-filter: blur(5px);
+  color: green;
+  font-size: 14px;
+  font-weight: bold;
+  /* overflow: hidden; */
+}
+.list span:first-child {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; /* 👈 THIS IS KEY */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .list button{
+  background-color: red;
+  width: 40px;
+  height: 30px;
+} */
+.title {
+  flex: 2;              /* takes more space */
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; /* 👈 handles long text */
+}
+.amount {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+}
+.list button{
+  flex:0;
+  background:none;
+  border: none;
+  cursor: pointer;
+}
+.list i{
+  font-size: 24px;
+}
+.logo{
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+
+ 
+}
+.logo img{
+  width:100%;
+  max-width: 340px;
+  /* height: 30%; */
+  height: 100%;
+  border-radius: 8px;
+}
+.logo p{
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
 }
