@@ -156,3 +156,17 @@ input{
   font-weight: bold;
   margin-top: 10px;
 }
+
+
+/* MOBILE SCREEN */
+
+@media (max-width: 500px) {
+
+  .expenseTracker{
+    display: block;
+    text-align: center;
+    margin: 2px;
+    padding: 2px;
+  }
+
+}
