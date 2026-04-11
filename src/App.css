@@ -174,17 +174,22 @@ input{
 /* MOBILE SCREEN */
 
 @media (max-width: 500px) {
+  body{
+    background-color: #8FBC8B;
+    margin: 0;
+    padding: 0;
+  }
 
   .expenseTracker{
     display: block;
     text-align: center;
-    margin: 0 5px 5px 5px;
-    padding: 2px;
-    background-color: #8FBC8B;
+    /* margin: 0 5px 5px 5px; */
+    /* padding: 2px; */
+  
   }
 
   .total{
-    margin-top:8px;
+    padding-top:10px;
     width: 100%;
   
   }
