@@ -81,9 +81,7 @@ input{
   border: 2px solid green;;
   color:green;
   border-radius: 8px;
-  width: 100%;
-  /* min-width: 50%; */
-  max-width: 50%;
+  width: 50%;
   padding: 12px;
   margin-top: 10px;
   margin-left: 20px;
@@ -187,6 +185,7 @@ input{
 
   .total{
     margin-top:8px;
+    width: 100%;
   
   }
   
