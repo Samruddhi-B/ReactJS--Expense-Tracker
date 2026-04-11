@@ -179,11 +179,18 @@ input{
     background-color: #8FBC8B;
     margin: 0;
     padding: 0;
+    display: block;
+  }
+  .heading{
+    margin:0;
+    padding: 0;
   }
 
   .expenseTracker{
     display: block;
     text-align: center;
+    background-color: #8FBC8B;
+    background-image: none;
     /* margin: 0 5px 5px 5px; */
     /* padding: 2px; */
   
