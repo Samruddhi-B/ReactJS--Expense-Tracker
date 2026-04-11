@@ -6,6 +6,7 @@
 body{
   min-height: 100vh;
   display: flex;
+  margin:0;
   justify-content: center;
   align-items: center;
   background-color:#FBCEB1;
@@ -155,6 +156,17 @@ input{
   font-size: 24px;
   font-weight: bold;
   margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .expenseTracker{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    margin: 2px;
+  }
 }
 
 
