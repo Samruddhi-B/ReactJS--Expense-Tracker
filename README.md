@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## You can see the preview here
 https://react-js-expense-tracker-two.vercel.app/
 
 ## Available Scripts
